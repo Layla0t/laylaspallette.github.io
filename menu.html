@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Layla's Pallette</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Fredoka+One&display=swap');
+        body {
+            font-family: 'Comic Neue', cursive;
+            background-color: #ffebcd; /* Blanched Almond background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+        header {
+            background-color: #ff69b4; /* Hot Pink header */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center; /* Center content */
+            font-family: 'Trebuchet MS', cursive;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        header h1 {
+            font-family: 'Trebuchet MS', sans-serif;
+            margin: 20px 0 0;
+        }
+        header img {
+            width: 100px;
+            height: auto;
+            display: inline-block;
+            margin: 0 10px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffb6c1; /* Light Pink for nav */
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.4s ease, transform 0.4s ease;
+        }
+        nav a:hover {
+            background-color: #ff69b4; /* Hot Pink on hover */
+            transform: scale(1.1);
+        }
+        .container {
+            padding: 20px;
+            animation: slideIn 1.2s ease-out;
+        }
+        .container h2 {
+            color: #ff69b4; /* Hot Pink heading color */
+            text-shadow: 2px 2px #ffb6c1; /* Subtle shadow */
+            text-align: left;
+        }
+        .container p {
+            text-align: left;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #ff69b4;
+            color: white;
+            text-align: center;  /* Center the text in the footer */
+            padding: 5px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            opacity: 1;
+            transition: opacity 0.7s;
+        }
+        footer:hover {
+            opacity: 0.1;
+        }
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .product {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: productFadeIn 1.5s forwards;
+        }
+        .product img {
+            width: 180px;  /* Set width to 150px */
+            height: 150px; /* Set height to 150px to make them square */
+            object-fit: cover; /* Ensures images maintain their aspect ratio */
+            border-radius: 10px; /* Rounded corners */
+            transition: transform 0.5s ease;
+        }
+        .product img:hover {
+            transform: scale(1.2); /* Slight zoom on hover */
+        }
+        /* Animation for product fade-in */
+        @keyframes productFadeIn {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        .product div {
+            flex: 1;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="layla'spallette.jpg" alt="Layla's Pallette Logo">
+        </a>
+        <h1>Layla's Pallette</h1>
+        <p>"Delicious homemade baked goods"</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="menu.html">Menu</a>
+        <a href="pictures.html">Pictures</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="container">
+        <h2>Menu</h2>
+        <div class="product">
+            <div>
+                <h2>Brookies</h2>
+                <p>A delightful combination of brownies and cookies.</p>
+                <p>Half a dozen (6): $10</p>
+                <p>A dozen (12): $18</p>
+            </div>
+            <img src="brookie.jpg" alt="Brookies">
+        </div>
+        <div class="product">
+            <div>
+                <h2>Pound Cake</h2>
+                <p>Refreshing pound cakes with a tangy glaze.</p>
+                <p>Price: $10 *Per loaf*</p>
+                <p>Flavors include: <em>Vanilla, Lemon, Orange, Strawberry, Chocolate, Marble Swirl, and Carrot.</em></p>
+                <p>Want a flavor not listed above? We’ve got you! Custom pound cakes start at $12 depending on ingredients and with final pricing based on the ingredients you choose. </p>
+                <p>Call us to create your customized pound cake!</p>
+            </div>
+            <img src="noproductsimage.jpg" alt="Lemon Cake">
+        </div>
+        <div class="product">
+            <div>
+                <h2>Banana Bread</h2>
+                <p>Moist and flavorful banana bread.</p>
+                <p>Price: $10 *Per plain loaf*</p>
+                <p>Want to customize with delicious add-ons like chocolate chips, walnuts, cinnamon swirl, peanut butter, or even fruit chunks?
+
+Custom banana breads start at $14 per loaf, with final pricing based on the ingredients you choose.</p>
+            <p>Call us to customize your banana bread!</p>
+            </div>
+            <img src="banana.bread.jpg" alt="Banana Bread">
+        </div>
+        <div class="product">
+            <div>
+                <h2>Muffins</h2>
+                <p>Freshly baked muffins in various flavors.</p>
+                <p>Half a dozen (6): $10</p>
+                <p>A dozen (12): $18</p>
+                <p>Flavors include: <em>Lemon, Orange, Blueberry, and Chocolate Chip.</em></p>
+                <p>Want a muffin flavor that’s not listed above? We’ve got you! Custom muffins start at $15 per dozen, with final pricing based on the ingredients you choose.</p>
+
+<p>Call us to create your custom muffin!</p>
+            </div>
+            <img src="0d589192e65c245b35420ff24055e48a7ed5faa7-24.jpg" alt="Muffins">
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Layla's Pallette. All rights reserved.</p>
+    </footer>
+</body>
+</html>
