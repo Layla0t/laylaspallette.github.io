@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pictures - Layla's Pallette</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Fredoka+One&display=swap');
+        body {
+            font-family: 'Comic Neue', cursive;
+            background-color: #ffebcd; /* Blanched Almond background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Center all text */
+        }
+        header {
+            background-color: #ff69b4; /* Hot Pink header */
+            color: #fff;
+            padding: 10px 0;
+            animation: fadeIn 1.5s ease-in-out;
+            
+        }
+        header h1 {
+            font-family: 'Trebuchet MS', sans-serif;
+            margin: 20px 0 0;
+        }    
+        }
+        
+        header img {
+            display: block;
+            margin: 0 auto;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffb6c1; /* Light Pink for nav */
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: background-color 0.4s ease, transform 0.4s ease;
+        }
+        nav a:hover {
+            background-color: #ff69b4; /* Hot Pink on hover */
+            transform: scale(1.1); /* Slight scaling effect */
+        }
+        .container {
+            padding: 20px;
+            animation: slideIn 1.2s ease-out;
+        }
+        .container h2 {
+            color: #ff69b4; /* Hot Pink heading color */
+            text-shadow: 2px 2px #ffb6c1; /* Subtle shadow */
+            text-align: left; /* Align the heading to the left */
+            margin-left: 10px; /* Add space to the left */
+        }
+        .container p {
+            line-height: 1.6; /* Improved readability */
+            text-align: left; /* Align the paragraph text to the left */
+            margin-left: 20px; /* Optional: Add some left margin for spacing */
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center the images horizontally */
+            gap: 20px; /* Space between the images */
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 150px; /* Set the image size */
+            height: 150px; /* Set the image size */
+            object-fit: cover; /* Maintain aspect ratio */
+            border-radius: 15%; /* Make the images round */
+            transition: transform 0.5s ease, box-shadow 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.1); /* Popping effect */
+            box-shadow: 0 8px 20px rgba(255, 105, 180, 0.8); /* Glowing effect */
+            outline: 4px solid rgba(255, 182, 193, 0.8); /* Light Pink border */
+        }
+        footer {
+            background-color: #ff69b4;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            opacity: 1;
+            transition: opacity 0.7s;
+        }
+        footer:hover {
+            opacity: 0.10;
+        }
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="layla'spallette.jpg" alt="Logo" style="width: 100px; height: auto;">
+        </a>
+        <h1>Layla's Pallette</h1>
+        <p><b>"Delicious homemade baked goods"</b></p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="menu.html">Menu</a>
+        <a href="pictures.html">Pictures</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="container">
+        <h2>Pictures</h2>
+        <p>Here are some delicious desserts that I've created! *Note: these are not for sale, these are just some images of desserts I've made.*</p>
+        <div class="gallery">
+            <img src="applepie.jpg" alt="Apple Pie">
+            <img src="1713113320833.jpg" alt="Apple Cake">
+            <img src="IMG_20240718_201422.jpg" alt="Red Velvet Cake">
+            <img src="cookie.jpg" alt="Cinnamon Cookie">
+            <img src="peachtart.jpg" alt="Peach Tart">
+            <img src="chocomacroons.jpg" alt="Chocolate Macaroons">
+            <img src="35cbafae509a9143a73221d664aa714dce1e05b1-24.jpg" alt="Apple Pie">
+            <img src="cinnamorolls.jpg" alt="Cinnamon Rolls">
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Layla's Pallette. All rights reserved.</p>
+    </footer>
+</body>
+</html>
