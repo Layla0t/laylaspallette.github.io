@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layla's Pallette</title>
+    <style>
+        body {
+            font-family: 'Comic Neue', cursive;
+            background-color: #ffebcd; /* Blanched Almond background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff69b4; /* Hot Pink header */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            font-family: 'Trebuchet MS', cursive;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffb6c1; /* Light Pink for nav */
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #ff69b4; /* Hot Pink on hover */
+        }
+        .container {
+            padding: 20px;
+        }
+        footer {
+            background-color: #ff69b4;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Your HTML content goes here -->
+</body>
+</html>
