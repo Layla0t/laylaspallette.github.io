@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layla's Pallette</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Fredoka+One&display=swap');
+        body {
+            font-family: 'Comic Neue', cursive;
+            background-color: #ffebcd; /* Blanched Almond background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Center all text */
+        }
+        header {
+            background-color: #ff69b4; /* Hot Pink header */
+            color: #fff;
+            padding: 10px 0;
+            animation: fadeIn 1.5s ease-in-out;
+            
+        }
+        header h1 {
+            font-family: 'Trebuchet MS', sans-serif;
+            margin: 20px 0 0;
+        }    
+        }
+        header img {
+            display: block;
+            margin: 0 auto;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffb6c1; /* Light Pink for nav */
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.4s ease, transform 0.4s ease;
+        }
+        nav a:hover {
+            background-color: #ff69b4; /* Hot Pink on hover */
+            transform: scale(1.1);
+        }
+        .container {
+            padding: 20px;
+            animation: slideIn 1.2s ease-out;
+            text-align: left; /* Left-align container text */
+        }
+        .container h2 {
+            color: #ff69b4; /* Hot Pink heading color */
+            text-shadow: 2px 2px #ffb6c1; /* Subtle shadow */
+        }
+        .container p {
+            line-height: 1.6; /* Improved readability */
+        }
+        footer {
+            background-color: #ff69b4;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            opacity: 1;
+            transition: opacity 0.7s;
+        }
+        footer:hover {
+            opacity: 0.10;
+        }
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="layla'spallette.jpg" alt="Logo" style="width: 100px; height: auto;">
+        </a>
+        <h1>Layla's Pallette</h1>
+        <p><b>"Delicious homemade baked goods"</b></p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="menu.html">Menu</a>
+        <a href="pictures.html">Pictures</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="container">
+        <h2>My Story</h2>
+        <p>Hello! My name is Layla Thompson, and I’m the owner of Layla's Pallette. At Layla's Pallette, we’re all about making a bunch of different baked goods that everyone will love. We have tasty cookies, yummy brownies, light muffins, and even treats that don’t have eggs, all made with a lot of care and creativity.</p>
+
+        <p>I started Layla's Pallette in early April 2024 because I wanted to make sure that everyone, no matter what kind of allergies they have, they still can enjoy really good treats. Whether you’re gluten-sensitive, or vegan, I’m here to offer something that tastes great and meets your needs. I also really love coding, this website specifically, is made all by code by me. Yes! you heard that right! I coded this website all by myself, any bugs and updates will be fixed myself to make sure this website is the best as possible!!</p>
+
+        <p>Since opening, I’ve been working hard to get my recipes just right and to add new treats that everyone can enjoy. Each treat is made with the best ingredients and a lot of love, with the hope of making you smile with every bite.</p>
+
+        <p>Thanks for checking out Layla's Pallette! I hope you’ll give our baked goods a try and find something you really like.</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Layla's Pallette. All rights reserved.</p>
+    </footer>
+</body>
+</html>
