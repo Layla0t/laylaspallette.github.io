@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layla's Pallette</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Fredoka+One&display=swap');
+        body {
+            font-family: 'Comic Neue', cursive;
+            background-color: #ffebcd; /* Blanched Almond background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Center all text */
+        }
+        header {
+            background-color: #ff69b4; /* Hot Pink header */
+            color: #fff;
+            padding: 10px 0;
+            animation: fadeIn 1.5s ease-in-out;
+            
+        }
+        header h1 {
+            font-family: 'Trebuchet MS', sans-serif;
+            margin: 20px 0 0;
+        }    
+        }
+        header img {
+            display: block;
+            margin: 0 auto;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffb6c1; /* Light Pink for nav */
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: background-color 0.4s ease, transform 0.4s ease;
+        }
+        nav a:hover {
+            background-color: #ff69b4; /* Hot Pink on hover */
+            transform: scale(1.1); /* Slight scaling effect */
+        }
+        .container {
+            padding: 20px;
+            animation: slideIn 1.2s ease-out;
+        }
+        .container h2 {
+            color: #ff69b4; /* Hot Pink heading color */
+            text-shadow: 2px 2px #ffb6c1; /* Subtle shadow */
+        }
+        .container p {
+            line-height: 1.6; /* Improved readability */
+        }
+        .container img {
+            max-width: 70%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.5s ease;
+            display: block;
+            margin: 20px auto;
+        }
+        .container img:hover {
+            transform: scale(1.10);
+        }
+        footer {
+            background-color: #ff69b4;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            opacity: 1;
+            transition: opacity 0.7s;
+        }
+        footer:hover {
+            opacity: 0.10;
+        }
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="layla'spallette.jpg" alt="Logo" style="width: 100px; height: auto;">
+        </a>
+        <h1>Layla's Pallette</h1>
+        <p><b>"Delicious homemade baked goods"</b></p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="menu.html">Menu</a>
+        <a href="pictures.html">Pictures</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="container">
+        <h2>Welcome to Layla's Pallette!</h2>
+        <p>We offer a variety of delicious homemade baked goods made with love and the finest ingredients.</p>
+        <img src="IMG_20240117_225610-COLLAGE.jpg" alt="Baking Image">
+    </div>
+    <footer>
+        <p>&copy; 2024 Layla's Pallette. All rights reserved.</p>
+    </footer>
+</body>
+</html>
