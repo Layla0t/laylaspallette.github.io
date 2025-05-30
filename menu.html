@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Products - Layla's Pallette</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pictures - Layla's Pallette</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Fredoka+One&display=swap');
         body {
@@ -12,70 +12,86 @@
             color: #333;
             margin: 0;
             padding: 0;
-            text-align: left;
+            text-align: center; /* Center all text */
         }
         header {
             background-color: #ff69b4; /* Hot Pink header */
             color: #fff;
-            padding: 20px 0;
-            text-align: center;
-            font-family: 'Trebuchet MS', cursive;
+            padding: 10px 0;
             animation: fadeIn 1.5s ease-in-out;
         }
         header h1 {
             font-family: 'Trebuchet MS', sans-serif;
             margin: 20px 0 0;
-        }
+        }    
         header img {
-            width: 100px;
-            height: auto;
-            display: inline-block;
-            margin: 0 10px;
+            display: block;
+            margin: 0 auto;
         }
         nav {
             display: flex;
             justify-content: center;
             background-color: #ffb6c1; /* Light Pink for nav */
-            animation: fadeIn 1.5s ease-in-out;
         }
         nav a {
             color: #fff;
             padding: 14px 20px;
             text-decoration: none;
             text-transform: uppercase;
-            font-weight: bold;
             transition: background-color 0.4s ease, transform 0.4s ease;
         }
         nav a:hover {
             background-color: #ff69b4; /* Hot Pink on hover */
-            transform: scale(1.1);
+            transform: scale(1.1); /* Slight scaling effect */
         }
         .container {
             padding: 20px;
+            padding-bottom: 60px; /* extra space so content isn’t covered by footer */
             animation: slideIn 1.2s ease-out;
         }
         .container h2 {
             color: #ff69b4; /* Hot Pink heading color */
             text-shadow: 2px 2px #ffb6c1; /* Subtle shadow */
-            text-align: left;
+            text-align: left; /* Align the heading to the left */
+            margin-left: 10px; /* Add space to the left */
         }
         .container p {
-            text-align: left;
-            line-height: 1.6;
+            line-height: 1.6; /* Improved readability */
+            text-align: left; /* Align the paragraph text to the left */
+            margin-left: 20px; /* Optional: Add some left margin for spacing */
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center the images horizontally */
+            gap: 20px; /* Space between the images */
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 150px; /* Set the image size */
+            height: 150px; /* Set the image size */
+            object-fit: cover; /* Maintain aspect ratio */
+            border-radius: 15%; /* Make the images round */
+            transition: transform 0.5s ease, box-shadow 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.1); /* Popping effect */
+            box-shadow: 0 8px 20px rgba(255, 105, 180, 0.8); /* Glowing effect */
+            outline: 4px solid rgba(255, 182, 193, 0.8); /* Light Pink border */
         }
         footer {
             background-color: #ff69b4;
-            color: white;
+            color: #fff;
             text-align: center;
-            padding: 5px;
+            padding: 5px 0;
             position: fixed;
-            bottom: 0;
             width: 100%;
+            bottom: 0;
             opacity: 1;
             transition: opacity 0.7s;
         }
         footer:hover {
-            opacity: 0.1;
+            opacity: 0.10;
         }
         /* Animations */
         @keyframes fadeIn {
@@ -96,47 +112,26 @@
                 opacity: 1;
             }
         }
-        .product {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-            opacity: 0;
-            animation: productFadeIn 1.5s forwards;
-        }
-        .product img {
-            width: 180px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 10px;
-            transition: transform 0.5s ease;
-        }
-        .product img:hover {
-            transform: scale(1.2);
-        }
-        @keyframes productFadeIn {
-            from {
-                opacity: 0;
-                transform: translateX(-50px);
+        /* Responsive for mobile */
+        @media (max-width: 480px) {
+            .gallery img {
+                width: 100px;
+                height: 100px;
             }
-            to {
+            footer {
+                position: static;
                 opacity: 1;
-                transform: translateX(0);
             }
-        }
-        .product div {
-            flex: 1;
-            margin-left: 20px;
         }
     </style>
 </head>
 <body>
     <header>
         <a href="index.html">
-            <img src="layla'spallette.jpg" alt="Layla's Pallette Logo" />
+            <img src="layla'spallette.jpg" alt="Logo" style="width: 100px; height: auto;" />
         </a>
         <h1>Layla's Pallette</h1>
-        <p>"Delicious homemade baked goods"</p>
+        <p><b>"Delicious homemade baked goods"</b></p>
     </header>
     <nav>
         <a href="index.html">Home</a>
@@ -146,56 +141,19 @@
         <a href="contact.html">Contact Us</a>
     </nav>
     <div class="container">
-        <h2>Menu</h2>
-
-        <div class="product">
-            <div>
-                <h2>Brookies</h2>
-                <p>A delightful combination of brownies and cookies.</p>
-                <p>Half a dozen (6): $10</p>
-                <p>A dozen (12): $18</p>
-            </div>
-            <img src="brookie.jpg" alt="Brookies" />
-        </div>
-
-        <div class="product">
-            <div>
-                <h2>Pound Cake</h2>
-                <p>Refreshing pound cakes with a tangy glaze.</p>
-                <p>Price: $10 <em>per loaf</em></p>
-                <p>Flavors include: <em>Vanilla, Lemon, Orange, Strawberry, Chocolate, Marble Swirl, and Carrot.</em></p>
-                <p>Want a flavor not listed above? We’ve got you! Custom pound cakes start at $12 depending on ingredients, with final pricing based on your choices.</p>
-                <p>Call us to create your customized pound cake!</p>
-            </div>
-            <img src="noproductsimage.jpg" alt="Lemon Cake" />
-        </div>
-
-        <div class="product">
-            <div>
-                <h2>Banana Bread</h2>
-                <p>Moist and flavorful banana bread.</p>
-                <p>Price: $10 <em>per plain loaf</em></p>
-                <p>Want to customize with add-ons like chocolate chips, walnuts, cinnamon swirl, peanut butter, or fruit chunks?</p>
-                <p>Custom banana breads start at $14 per loaf, with final pricing based on your ingredient choices.</p>
-                <p>Call us to customize your banana bread!</p>
-            </div>
-            <img src="banana.bread.jpg" alt="Banana Bread" />
-        </div>
-
-        <div class="product">
-            <div>
-                <h2>Muffins</h2>
-                <p>Freshly baked muffins in various flavors.</p>
-                <p>Half a dozen (6): $10</p>
-                <p>A dozen (12): $18</p>
-                <p>Flavors include: <em>Lemon, Orange, Blueberry, and Chocolate Chip.</em></p>
-                <p>Want a muffin flavor that’s not listed? Custom muffins start at $15 per dozen, with final pricing based on your ingredient choices.</p>
-                <p>Call us to create your custom muffin!</p>
-            </div>
-            <img src="0d589192e65c245b35420ff24055e48a7ed5faa7-24.jpg" alt="Muffins" />
+        <h2>Pictures</h2>
+        <p>Here are some delicious desserts that I've created! *Note: these are not for sale, these are just some images of desserts I've made.*</p>
+        <div class="gallery">
+            <img src="applepie.jpg" alt="Apple Pie" />
+            <img src="1713113320833.jpg" alt="Apple Cake" />
+            <img src="IMG_20240718_201422.jpg" alt="Red Velvet Cake" />
+            <img src="cookie.jpg" alt="Cinnamon Cookie" />
+            <img src="peachtart.jpg" alt="Peach Tart" />
+            <img src="chocomacroons.jpg" alt="Chocolate Macaroons" />
+            <img src="35cbafae509a9143a73221d664aa714dce1e05b1-24.jpg" alt="Apple Pie" />
+            <img src="cinnamorolls.jpg" alt="Cinnamon Rolls" />
         </div>
     </div>
-
     <footer>
         <p>&copy; 2024 Layla's Pallette. All rights reserved.</p>
     </footer>
