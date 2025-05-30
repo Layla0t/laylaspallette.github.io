@@ -1,134 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layla's Pallette</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Fredoka+One&display=swap');
-        
-        body {
-            font-family: 'Comic Neue', cursive;
-            background-color: #ffebcd; /* Blanched Almond background */
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        
-        header {
-            background-color: #ff69b4; /* Hot Pink header */
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-            font-family: 'Trebuchet MS', sans-serif; /* Font changed to Trebuchet MS */
-            animation: fadeIn 1.5s ease-in-out;
-        }
-        
-        header img {
-            width: 100px;
-            height: auto;
-        }
-        
-        header h1, header p {
-            font-family: 'Trebuchet MS', sans-serif; /* Font changed to Trebuchet MS for the title and slogan */
-        }
-        
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #ffb6c1; /* Light Pink for nav */
-            animation: fadeIn 1.5s ease-in-out;
-        }
-        
-        nav a {
-            color: #fff;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-transform: uppercase;
-            transition: background-color 0.4s ease, transform 0.4s ease;
-        }
-        
-        nav a:hover {
-            background-color: #ff69b4; /* Hot Pink on hover */
-            transform: scale(1.1);
-        }
-        
-        .container {
-            padding: 20px;
-            animation: slideIn 1.2s ease-out;
-        }
-        
-        .container h2 {
-            color: #ff69b4; /* Hot Pink heading */
-            text-shadow: 2px 2px #ffb6c1;
-        }
-        
-        footer {
-            background-color: #ff69b4;
-            color: #fff;
-            text-align: center;
-            padding: 5px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-            opacity: 1;
-            transition: opacity 0.7s ease;
-        }
-        
-        footer:hover {
-            opacity: 0.1;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Layla's Pallette - Contact Us</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Fredoka+One&display=swap');
 
-        /* Animations */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-        
-        @keyframes slideIn {
-            from {
-                transform: translateY(50px);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-    </style>
+    body {
+      font-family: 'Comic Neue', cursive;
+      background-color: #ffebcd; /* Blanched Almond */
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ff69b4; /* Hot Pink */
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+      font-family: 'Trebuchet MS', sans-serif;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    header img {
+      width: 100px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    header h1,
+    header p {
+      margin: 0.3em 0;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #ffb6c1; /* Light Pink */
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    nav a {
+      color: #fff;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      transition: background-color 0.4s ease, transform 0.4s ease;
+    }
+
+    nav a:hover {
+      background-color: #ff69b4; /* Hot Pink */
+      transform: scale(1.1);
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      animation: slideIn 1.2s ease-out;
+      background-color: #fff9f9;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(255, 105, 180, 0.2);
+      text-align: center;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .container h2 {
+      color: #ff69b4; /* Hot Pink */
+      text-shadow: 2px 2px #ffb6c1;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #ff69b4;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      opacity: 1;
+      transition: opacity 0.7s ease;
+      font-size: 0.9rem;
+    }
+
+    footer:hover {
+      opacity: 0.1;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <a href="index.html">
-            <img src="layla'spallette.jpg" alt="Logo">
-        </a>
-        <h1>Layla's Pallette</h1>
-        <p>"Delicious homemade baked goods"</p>
-    </header>
-    
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="menu.html">Menu</a>
-        <a href="pictures.html">Pictures</a>
-        <a href="contact.html">Contact Us</a>
-    </nav>
-    
-    <div class="container">
-        <h2>Contact Us</h2>
-        <p>Business Hours: Wednesday-Friday 5-7PM, Sunday 12-5PM</p>
-        <p>Have questions? Use the email below, or call us!</p>
-        <p>Email: laylaspallette@gmail.com</p>
-        <p>Phone: (860)-305-5636</p>
-        <p>*If you want to order something, you need to call the number above to place an order.*</p>
-    </div>
-    
-    <footer>
-        <p>&copy; 2024 Layla's Pallette. All rights reserved.</p>
-    </footer>
+  <header>
+    <a href="index.html">
+      <img src="layla'spallette.jpg" alt="Layla's Pallette Logo" />
+    </a>
+    <h1>Layla's Pallette</h1>
+    <p>"Delicious homemade baked goods"</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="menu.html">Menu</a>
+    <a href="order.html">Order</a>
+    <a href="pictures.html">Pictures</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p><strong>Business Hours:</strong> Wednesday-Friday 5-7PM, Sunday 12-5PM</p>
+    <p>Have questions? Use the email below, or call us!</p>
+    <p><strong>Email:</strong> <a href="mailto:laylaspallette@gmail.com">laylaspallette@gmail.com</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+18603055636">(860) 305-5636</a></p>
+    <p><em>*If you want to order something, please call the number above to place your order.*</em></p>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Layla's Pallette. All rights reserved.</p>
+  </footer>
 </body>
 </html>
