@@ -1,40 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Layla's Pallette</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
         body {
             font-family: 'Comic Neue', cursive;
-            background-color: #ffebcd; /* Blanched Almond background */
+            background-color: #ffebcd; /* Blanched Almond */
             color: #333;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #ff69b4; /* Hot Pink header */
+            background-color: #ff69b4; /* Hot Pink */
             color: #fff;
             padding: 10px 0;
             text-align: center;
-            font-family: 'Trebuchet MS', cursive;
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+        header img {
+            width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: #ffb6c1; /* Light Pink for nav */
+            background-color: #ffb6c1; /* Light Pink */
         }
         nav a {
             color: #fff;
             padding: 14px 20px;
             text-decoration: none;
             text-transform: uppercase;
+            transition: background-color 0.3s ease;
         }
         nav a:hover {
-            background-color: #ff69b4; /* Hot Pink on hover */
+            background-color: #ff69b4; /* Hot Pink hover */
         }
         .container {
-            padding: 20px;
+            padding: 30px 20px 80px; /* extra bottom padding for footer */
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+        .container h1 {
+            color: #ff69b4;
+            margin-bottom: 10px;
+        }
+        .container p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto;
         }
         footer {
             background-color: #ff69b4;
@@ -44,10 +66,55 @@
             position: fixed;
             width: 100%;
             bottom: 0;
+            opacity: 1;
+            transition: opacity 0.7s;
+        }
+        footer:hover {
+            opacity: 0.1;
+        }
+        /* Responsive */
+        @media (max-width: 480px) {
+            nav {
+                flex-wrap: wrap;
+            }
+            nav a {
+                flex: 1 1 100%;
+                padding: 10px 0;
+            }
+            footer {
+                position: static;
+            }
+            .container {
+                padding-bottom: 40px;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Your HTML content goes here -->
+    <header>
+        <a href="index.html">
+            <img src="layla'spallette.jpg" alt="Layla's Pallette Logo" />
+        </a>
+        <h1>Layla's Pallette</h1>
+        <p><em>"Delicious homemade baked goods made with love"</em></p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="menu.html">Menu</a>
+        <a href="pictures.html">Pictures</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="container">
+        <h1>Welcome to Layla's Pallette!</h1>
+        <p>
+            Hi! I’m Layla, and I bake tasty homemade treats just for you. From cookies to cakes, 
+            everything here is baked fresh and made with care. Browse the menu, check out pictures 
+            of my creations, and don’t hesitate to reach out if you want to order something special!
+        </p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Layla's Pallette. All rights reserved.</p>
+    </footer>
 </body>
 </html>
