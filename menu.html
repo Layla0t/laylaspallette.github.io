@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Products - Layla's Pallette</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Fredoka+One&display=swap');
@@ -18,7 +18,7 @@
             background-color: #ff69b4; /* Hot Pink header */
             color: #fff;
             padding: 20px 0;
-            text-align: center; /* Center content */
+            text-align: center;
             font-family: 'Trebuchet MS', cursive;
             animation: fadeIn 1.5s ease-in-out;
         }
@@ -66,7 +66,7 @@
         footer {
             background-color: #ff69b4;
             color: white;
-            text-align: center;  /* Center the text in the footer */
+            text-align: center;
             padding: 5px;
             position: fixed;
             bottom: 0;
@@ -105,16 +105,15 @@
             animation: productFadeIn 1.5s forwards;
         }
         .product img {
-            width: 180px;  /* Set width to 150px */
-            height: 150px; /* Set height to 150px to make them square */
-            object-fit: cover; /* Ensures images maintain their aspect ratio */
-            border-radius: 10px; /* Rounded corners */
+            width: 180px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
             transition: transform 0.5s ease;
         }
         .product img:hover {
-            transform: scale(1.2); /* Slight zoom on hover */
+            transform: scale(1.2);
         }
-        /* Animation for product fade-in */
         @keyframes productFadeIn {
             from {
                 opacity: 0;
@@ -134,7 +133,7 @@
 <body>
     <header>
         <a href="index.html">
-            <img src="layla'spallette.jpg" alt="Layla's Pallette Logo">
+            <img src="layla'spallette.jpg" alt="Layla's Pallette Logo" />
         </a>
         <h1>Layla's Pallette</h1>
         <p>"Delicious homemade baked goods"</p>
@@ -148,6 +147,7 @@
     </nav>
     <div class="container">
         <h2>Menu</h2>
+
         <div class="product">
             <div>
                 <h2>Brookies</h2>
@@ -155,31 +155,33 @@
                 <p>Half a dozen (6): $10</p>
                 <p>A dozen (12): $18</p>
             </div>
-            <img src="brookie.jpg" alt="Brookies">
+            <img src="brookie.jpg" alt="Brookies" />
         </div>
+
         <div class="product">
             <div>
                 <h2>Pound Cake</h2>
                 <p>Refreshing pound cakes with a tangy glaze.</p>
-                <p>Price: $10 *Per loaf*</p>
+                <p>Price: $10 <em>per loaf</em></p>
                 <p>Flavors include: <em>Vanilla, Lemon, Orange, Strawberry, Chocolate, Marble Swirl, and Carrot.</em></p>
-                <p>Want a flavor not listed above? We’ve got you! Custom pound cakes start at $12 depending on ingredients and with final pricing based on the ingredients you choose. </p>
+                <p>Want a flavor not listed above? We’ve got you! Custom pound cakes start at $12 depending on ingredients, with final pricing based on your choices.</p>
                 <p>Call us to create your customized pound cake!</p>
             </div>
-            <img src="noproductsimage.jpg" alt="Lemon Cake">
+            <img src="noproductsimage.jpg" alt="Lemon Cake" />
         </div>
+
         <div class="product">
             <div>
                 <h2>Banana Bread</h2>
                 <p>Moist and flavorful banana bread.</p>
-                <p>Price: $10 *Per plain loaf*</p>
-                <p>Want to customize with delicious add-ons like chocolate chips, walnuts, cinnamon swirl, peanut butter, or even fruit chunks?
-
-Custom banana breads start at $14 per loaf, with final pricing based on the ingredients you choose.</p>
-            <p>Call us to customize your banana bread!</p>
+                <p>Price: $10 <em>per plain loaf</em></p>
+                <p>Want to customize with add-ons like chocolate chips, walnuts, cinnamon swirl, peanut butter, or fruit chunks?</p>
+                <p>Custom banana breads start at $14 per loaf, with final pricing based on your ingredient choices.</p>
+                <p>Call us to customize your banana bread!</p>
             </div>
-            <img src="banana.bread.jpg" alt="Banana Bread">
+            <img src="banana.bread.jpg" alt="Banana Bread" />
         </div>
+
         <div class="product">
             <div>
                 <h2>Muffins</h2>
@@ -187,13 +189,13 @@ Custom banana breads start at $14 per loaf, with final pricing based on the ingr
                 <p>Half a dozen (6): $10</p>
                 <p>A dozen (12): $18</p>
                 <p>Flavors include: <em>Lemon, Orange, Blueberry, and Chocolate Chip.</em></p>
-                <p>Want a muffin flavor that’s not listed above? We’ve got you! Custom muffins start at $15 per dozen, with final pricing based on the ingredients you choose.</p>
-
-<p>Call us to create your custom muffin!</p>
+                <p>Want a muffin flavor that’s not listed? Custom muffins start at $15 per dozen, with final pricing based on your ingredient choices.</p>
+                <p>Call us to create your custom muffin!</p>
             </div>
-            <img src="0d589192e65c245b35420ff24055e48a7ed5faa7-24.jpg" alt="Muffins">
+            <img src="0d589192e65c245b35420ff24055e48a7ed5faa7-24.jpg" alt="Muffins" />
         </div>
     </div>
+
     <footer>
         <p>&copy; 2024 Layla's Pallette. All rights reserved.</p>
     </footer>
